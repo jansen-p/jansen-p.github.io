@@ -1,0 +1,15 @@
+- name: About
+  link: /
+  anchor: '#'
+- name: Publications
+  link: /
+  anchor: '#publications'
+- name: Student projects
+  link: /
+  anchor: '#studentProjects'
+- name: Teaching
+  link: /
+  anchor: '#teaching'
+- name: Misc
+  link: /
+  anchor: '#misc'

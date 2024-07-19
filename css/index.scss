@@ -8,6 +8,10 @@
     font-weight: 700;
 }
 
+.anchor {
+    scroll-margin-top: 80px;
+}
+
 .portrait {
     border-radius: 2%;
     overflow: hidden;
@@ -15,10 +19,34 @@
     img { transform: scale(1.2); }
 }
 
+.conference_analyzed {
+    position: relative;
+    max-width: 100%;
+    left: -7em;
+}
+
+@media screen and (max-width: 750px) {
+    .conference_analyzed {
+        max-width: 100%;
+        left: 0em;
+    }
+}
+
 .footer .footer-links a {
     font-size: 25px;
     color: #000;
 }
+
+@media screen and (min-width: 1024px) {
+.navbar-end {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+}
+
 
 .publication-block {
     .publication-title {
@@ -28,6 +56,13 @@
         font-size: 110% !important;
 
         a { color: #000 }
+    }
+
+    .publication-title-with-link {
+        width: fit-content;
+        margin: 0 !important;
+        font-weight: 600;
+        font-size: 110% !important;
     }
 
     .publication-venue {
@@ -75,6 +110,12 @@
         img {
             width: 100%;
         }
+
+        .image-border {
+            border: 1px solid #707070;
+            border-radius: 2%;
+        }
+
     }
 
     .publication-mousecell {
@@ -102,4 +143,10 @@
         margin: 0 !important;
         margin-top: 0.5em !important;
     }
+}
+
+@media screen and (min-width: 1024px) {
+  .blogpost {
+    max-width: 900px !important;
+  }
 }
