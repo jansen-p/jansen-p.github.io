@@ -4,7 +4,7 @@ hausdörfer:
   website: oliver.hausdoerfer.de
   is_me: true
 nergis:
-  first_name: Nergishan 
+  first_name: Nergishan
   last_name: İyisan
   website: https://www.ee.cit.tum.de/en/rmn/people/
 chen:
@@ -27,4 +27,19 @@ wolfrum:
   first_name: Berna
   last_name: Özkale
   website: https://www.professoren.tum.de/oezkaleedelmann-berna
-
+schuck:
+  first_name: Martin
+  last_name: Schuck
+  website: https://amacati.github.io/
+lefort:
+  first_name: Eric
+  last_name: Lefort
+naimer:
+  first_name: Jack
+  last_name: Naimer
+tahir:
+  first_name: Hassan
+  last_name: Tahir
+dong:
+  first_name: Kate
+  last_name: Dong
