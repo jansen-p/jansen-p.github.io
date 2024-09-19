@@ -1,36 +1,36 @@
 - venue: Summer School, 2024
   title: Winning robot competition at the ETH Robotics Summer School
   description: Building a robot for autonomous outdoor exploration and artifact detection
-  image: ETH_RSS2024_before.png
+  image: misc/ETH_RSS2024_before.png
   webpage: https://robotics-summerschool.ethz.ch/
-  image_mouseover: ETH_RSS2024_after.png
+  image_mouseover: misc/ETH_RSS2024_after.png
 - venue: Conference, 2024
   title: Young scientist award for my masters` thesis at KIRO 2024
   description: KIRO2024 was the first german AI-in-robotics conference
   webpage: https://www.elektronikforschung.de/robotik
-  image: KIRO2024_before.png
-  image_mouseover: KIRO2024_after.png
+  image: misc/KIRO2024_before.png
+  image_mouseover: misc/KIRO2024_after.png
 - venue: Project, 2024
   title: Analyzing contributions to robotic conferences
   description:
   webpage: https://oliver.hausdoerfer.de/robotics_conferences_analyzed
-  image: Analyzing_robotics_conferences.png
+  image: misc/Analyzing_robotics_conferences.png
   image_border: true
 - venue: Hackathon, 2023
   title: Winning the SICK Solution Hackathon
   description:
   webpage: https://www.mirmi.tum.de/en/mirmi/news/article/tum-student-oliver-hausdoerfer-gewinnt-sick-solution-hackathon/
-  image: Sick_Hackathon_2024_before.png
-  image_mouseover: Sick_Hackathon_2024_after.png
+  image: misc/Sick_Hackathon_2024_before.png
+  image_mouseover: misc/Sick_Hackathon_2024_after.png
 - venue: Hackathon, 2021 
   title: Winning the start.ING Hackathon
   webpage: https://www.rolandberger.com/en/Join/Events/start.ing/index.html
   description:
 - venue: Project, 2021
   title: Project TUfast TU Dresden
-  description: Software for teaching and studying at TU Dresden. 3500 users. Awarded with the german [Digital Changemaker Award](https://www.stifterverband.org/digitalchangemaker-accelerator).
+  description: Software for teaching and studying at TU Dresden with 3500 users. Awarded with the german [Digital Changemaker Award](https://www.stifterverband.org/digitalchangemaker-accelerator).
   webpage: https://tu-fast.de/
-  image: TUfast.png
+  image: misc/TUfast.png
   image_border: true
 - venue: Hackathon, 2019
   title: Winning the bonding Engineering Competition

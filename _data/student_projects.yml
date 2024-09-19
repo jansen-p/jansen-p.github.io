@@ -3,6 +3,7 @@
   description: "A Franka Emika FR3 robotic manipulator builds lego structures."
   video: https://drive.google.com/file/d/1N1CvrnQH8WayqLru4apPA0yI7BwdBI1Q/view?usp=sharing
   image: lego_before.jpg
+  venue: 2024
   image_mouseover: lego_after.mp4
   authors:
     - schuck
