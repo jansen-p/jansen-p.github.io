@@ -4,12 +4,12 @@
 - name: Publications
   link: /
   anchor: '#publications'
-- name: Student projects
+- name: Projects
   link: /
-  anchor: '#studentProjects'
-- name: Teaching
-  link: /
-  anchor: '#teaching'
+  anchor: '#projects'
 - name: Misc
   link: /
   anchor: '#misc'
+- name: Teaching
+  link: /
+  anchor: '#teaching'

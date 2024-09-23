@@ -43,3 +43,13 @@ tahir:
 dong:
   first_name: Kate
   last_name: Dong
+guderian:
+  first_name: Lennard
+  last_name: Guderian
+  website: https://lennart.guderian.de/
+kluge:
+  first_name: Daniel
+  last_name: Kluge
+fugi:
+  first_name: Lucas 
+  last_name: Fugmann
