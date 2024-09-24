@@ -18,6 +18,8 @@
   webpage: https://oliver.hausdoerfer.de/robotics_conferences_analyzed
   image: Analyzing_robotics_conferences.png
   image_border: true
+  authors:
+    - hausdörfer
 - id: tufast
   venue: Project, 2021
   title: TUfast TU Dresden
