@@ -1,3 +1,15 @@
+- id2: latentActionPriors
+  title: Latent Action Priors From a Single Gait Cycle Demonstration for Online Imitation Learning
+  project_page: https://sites.google.com/view/latent-action-priors
+  arxiv: 2410.03246
+  description: A single gait cycle of expert demonstration significantly improves achieved reward and visual appearance of the learned gait in locomotion tasks - even for transfer tasks.
+  image: lap_before.jpg
+  image_mouseover: lap_after.mp4
+  authors:
+  - hausdörfer
+  - vonRohr
+  - lefort
+  - schoellig
 - id2: mechanobiology
   title: "Mechanoactivation of Single Stem Cells in Microgels Using a 3D-Printed Stimulation Device"
   venue: Small Methods, 2024
