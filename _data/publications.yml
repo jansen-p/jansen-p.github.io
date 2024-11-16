@@ -1,3 +1,16 @@
+- id2: comCompression
+  title: Communication Compression for Tensor Parallel LLM Inference
+  arxiv: 2411.09510
+  description: Inter-GPU communication compression for Large Language Models leads to up to 2x reduction of time-to-first-token with negligible model performance degradation.
+  image: comComp_before.png
+  image_border: true
+  venue: NeurIPS, 2024
+  awards: Conference (workshop)
+  authors:
+  - palmus
+  - le
+  - hausdörfer
+  - verma
 - id2: latentActionPriors
   title: Latent Action Priors From a Single Gait Cycle Demonstration for Online Imitation Learning
   project_page: https://sites.google.com/view/latent-action-priors
@@ -5,6 +18,8 @@
   description: A single gait cycle of expert demonstration significantly improves achieved reward and visual appearance of the learned gait in locomotion tasks - even for transfer tasks.
   image: lap_before.jpg
   image_mouseover: lap_after.mp4
+  venue: CoRL, 2024
+  awards: Conference (workshop)
   authors:
   - hausdörfer
   - vonRohr
