@@ -22,7 +22,7 @@
       {%elsif publication.paper%}
       {%assign title_link = publication.paper %}
       {%elsif publication.arxiv%}
-      {%assign title_link = publication.arxiv %}
+      {%assign title_link = "https://arxiv.org/abs/" | append: publication.arxiv %}
       {%else%}
       {%assign title_link =  '' %}
       {%endif%}
