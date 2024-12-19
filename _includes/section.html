@@ -21,6 +21,8 @@
       {%assign title_link = publication.webpage %}
       {%elsif publication.paper%}
       {%assign title_link = publication.paper %}
+      {%elsif publication.arxiv%}
+      {%assign title_link = publication.arxiv %}
       {%else%}
       {%assign title_link =  '' %}
       {%endif%}
