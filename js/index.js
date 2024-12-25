@@ -51,10 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // open all links in seperate tab
+    // Open all links in a separate tab, excluding anchor links on the same page
     var links = document.links;
     for (var i = 0; i < links.length; i++) {
-        links[i].target = "_blank";
+        var href = links[i].getAttribute("href");
+        // Check if the href starts with "#" or is an anchor to the current page
+        if (href && !href.startsWith("#") && !href.startsWith(window.location.pathname + "#")) {
+            links[i].target = "_blank";
+        }
     }
 });
 
