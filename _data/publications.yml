@@ -1,3 +1,16 @@
+- id2: agnathax
+  title: Deep reinforcement learning for investigating stretch feedback during swimming of the lamprey
+  description: Lampreys can locomote using only based on local sensory feedback loops. Similar neural network designs show favorable properties for robot learning.
+  image: agnathax.png
+  image_border: true
+  venue: Bioinspiration & Biomimetics
+  awards: Journal paper (masters' thesis)
+  paper: https://iopscience.iop.org/article/10.1088/1748-3190/adb8b1
+  authors:
+  - hausdörfer
+  - gupta
+  - ijspeert
+  - renj
 - id2: comCompression
   title: Communication Compression for Tensor Parallel LLM Inference
   arxiv: "2411.09510" # Required as string, as liquid ignores trailing zeros https://stackoverflow.com/questions/37862167/trailing-zeros-in-jekyll-liquid
