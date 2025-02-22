@@ -1,8 +1,9 @@
 - id2: agnathax
   title: Deep reinforcement learning for investigating stretch feedback during swimming of the lamprey
   description: Lampreys can locomote using only based on local sensory feedback loops. Similar neural network designs show favorable properties for robot learning.
-  image: agnathax.png
+  image: agnathax_before.png
   image_border: true
+  image_mouseover: agnathax_after.mp4
   venue: Bioinspiration & Biomimetics
   awards: Journal paper (masters' thesis)
   paper: https://iopscience.iop.org/article/10.1088/1748-3190/adb8b1
