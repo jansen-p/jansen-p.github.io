@@ -62,3 +62,83 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Add event listener to the submit button
+    const submitButton = document.getElementById('submitButton');
+    submitButton.addEventListener('click', submitEmail);
+    emailInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent form submission
+            submitButton.click(); // Trigger click event on submit button
+        }
+    });
+});
+
+function validateEmail(email) {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(email.toLowerCase());
+}
+
+function showMessage(text, isError = false) {
+    const messageDiv = document.getElementById('message');
+    messageDiv.textContent = text;
+    messageDiv.style.display = 'block';
+    messageDiv.className = `message ${isError ? 'error' : 'success'}`;
+}
+
+function submitEmail() {
+    const emailInput = document.getElementById('emailInput');
+    const submitButton = document.getElementById('submitButton');
+    const email = emailInput.value.trim();
+
+    if (!validateEmail(email)) {
+        showMessage('Please enter a valid email address', true);
+        return;
+    }
+
+    submitButton.disabled = true;
+    
+    // Replace this URL with your Google Apps Script web app URL
+    const googleAppScriptUrl = 'https://script.google.com/macros/s/AKfycbwiGxv02KdERUK68Gaf80V0BUlMGNyyrhVJPHTj72HRXxkAKoRUw7D8zS7Wr4mTlivn/exec';
+    
+    // Security check: ensure scriptUrl and hostname pair is valid to make sure other deployments do not use the same url
+    const currentHostname = window.location.hostname;
+    const isLocalhost = currentHostname === 'localhost' || currentHostname === '127.0.0.1';
+    const isOriginalSite = currentHostname === 'oliver.hausdoerfer.de';
+    const originalScriptUrl = 'https://script.google.com/macros/s/AKfycbwiGxv02KdERUK68Gaf80V0BUlMGNyyrhVJPHTj72HRXxkAKoRUw7D8zS7Wr4mTlivn/exec'
+
+    const isValidConfig = isLocalhost || 
+        (isOriginalSite && googleAppScriptUrl === originalScriptUrl) || 
+        (!isOriginalSite && googleAppScriptUrl !== originalScriptUrl);
+    
+    if (!isValidConfig) {
+        console.log('Invalid scriptUrl. Please update the scriptUrl in this js file.');
+        showMessage('An error occurred. Please try again later.', true);
+        submitButton.disabled = false;
+        return;
+    }
+
+    fetch(googleAppScriptUrl, {
+        method: 'POST',
+        mode: 'no-cors', // This is critical for avoiding CORS issues with Google Apps Script
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+            email: email,
+            origin: window.location.origin
+        })
+    })
+    .then(response => {
+        // With no-cors mode, we can't read the response, so we assume success
+        showMessage("You'll stay up-to-date with my research!");
+        emailInput.value = '';
+    })
+    .catch(error => {
+        showMessage('An error occurred. Please try again later.', true);
+        console.error('Error:', error);
+    })
+    .finally(() => {
+        submitButton.disabled = false;
+    });
+}

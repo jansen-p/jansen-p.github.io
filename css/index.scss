@@ -161,3 +161,73 @@
     max-width: 900px !important;
   }
 }
+
+.subscription-container {
+    max-width: 500px;
+    margin: 30px auto 0;
+}
+
+.subscription-message {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #555;
+    font-size: 16px;
+}
+
+.subscription-form {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.input-email {
+    flex-grow: 1;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.submit-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.send-icon {
+    width: 24px;
+    height: 24px;
+    fill: #555;
+}
+
+.message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.success { 
+    background-color: #dff0d8; 
+    color: #3c763d; 
+}
+
+.error { 
+    background-color: #f2dede; 
+    color: #a94442; 
+}
