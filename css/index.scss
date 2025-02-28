@@ -169,9 +169,6 @@
 
 .subscription-message {
     margin-bottom: 15px;
-    line-height: 1.5;
-    color: #555;
-    font-size: 16px;
 }
 
 .subscription-form {
@@ -184,7 +181,7 @@
     flex-grow: 1;
     padding: 10px 12px;
     font-size: 16px;
-    border: 2px solid #555;
+    border: 2px solid #e8e8e8;
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
@@ -213,7 +210,7 @@
 .send-icon {
     width: 24px;
     height: 24px;
-    fill: #555;
+    fill: rgba(0, 0, 0, 0.7);
 }
 
 .message {

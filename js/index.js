@@ -62,20 +62,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// submission box
 document.addEventListener('DOMContentLoaded', function() {
-    // Add event listener to the submit button
     const submitButton = document.getElementById('submitButton');
     submitButton.addEventListener('click', submitEmail);
     emailInput.addEventListener('keydown', function(event) {
         if (event.key === 'Enter') {
-            event.preventDefault(); // Prevent form submission
-            submitButton.click(); // Trigger click event on submit button
+            event.preventDefault();
+            submitButton.click();
         }
     });
 });
 
 function validateEmail(email) {
-    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const re = /^.+@.+\..+$/;
     return re.test(email.toLowerCase());
 }
 
@@ -130,6 +130,7 @@ function submitEmail() {
         })
     })
     .then(response => {
+        console.log(response)
         // With no-cors mode, we can't read the response, so we assume success
         showMessage("You'll stay up-to-date with my research!");
         emailInput.value = '';
