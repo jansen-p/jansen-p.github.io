@@ -21,9 +21,27 @@
   - petuker
   - schmidt
   - lienen
+- id: nav
+  venue: Project, 2023
+  title: Terminal navigation tools
+  description: Built scripts for quickly navigating the file tree in the terminal using fuzzy search.
+  webpage: https://github.com/jansen-p/navigaterm
+  image: navigaterm.png
+  image_border: true
+  authors:
+  - palmus
+- id: garmin
+  venue: Project, 2020
+  title: Garmin sports activity visualization
+  description: Built a shiny app to visualize Garmin activities (after the servers being down).
+  webpage: https://github.com/jansen-p/Garmin
+  # image: tennis.png
+  image_border: true
+  authors:
+  - palmus
 - id: tennis
   venue: Student Project, 2019
-  title: Table Tennis Robot
+  title: Table tennis robot
   description: Developed an algorithm for tracking table tennis balls.
   # webpage: https://tu-fast.de/
   image: tennis.png
