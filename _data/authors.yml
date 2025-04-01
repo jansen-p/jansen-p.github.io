@@ -1,73 +1,8 @@
-hausdörfer:
-  first_name: Oliver
-  last_name: Hausdörfer
-  website: oliver.hausdoerfer.de
-  is_me: true
-nergis:
-  first_name: Nergishan
-  last_name: İyisan
-  website: https://www.ee.cit.tum.de/en/rmn/people/
-chen:
-  first_name: Chen
-  last_name: Wang
-  website: https://www.ee.cit.tum.de/en/rmn/people/
-hiendl:
-  first_name: Lukas
-  last_name: Hiendlmeier
-  website: https://www.ee.cit.tum.de/en/nel/team/lukas-hiendlmeier/
-pharder:
-  first_name: Philipp
-  last_name: Harder
-  website: https://www.ee.cit.tum.de/en/rmn/people/
-wolfrum:
-  first_name: Bernhard
-  last_name: Wolfrum
-  website: https://www.professoren.tum.de/wolfrum-bernhard
-özkale:
-  first_name: Berna
-  last_name: Özkale
-  website: https://www.professoren.tum.de/oezkaleedelmann-berna
-schuck:
-  first_name: Martin
-  last_name: Schuck
-  website: https://amacati.github.io/
-lefort:
-  first_name: Eric
-  last_name: Lefort
-naimer:
-  first_name: Jack
-  last_name: Naimer
-tahir:
-  first_name: Hassan
-  last_name: Tahir
-dong:
-  first_name: Kate
-  last_name: Dong
-guderian:
-  first_name: Lennard
-  last_name: Guderian
-  website: https://lennart.guderian.de/
-kluge:
-  first_name: Daniel
-  last_name: Kluge
-fugi:
-  first_name: Lucas 
-  last_name: Fugmann
-vonRohr:
-  first_name: Alexander
-  last_name: von Rohr
-  website: https://thisisalex.de/
-lefort:
-  first_name: Èric
-  last_name: Lefort
-schoellig:
-  first_name: Angela
-  last_name: Schoellig
-  website: https://www.ce.cit.tum.de/lsy/prof-angela-schoellig/
 palmus:
   first_name: Jan
   last_name: Hansen-Palmus
-  website: https://www.linkedin.com/in/jan-hansen-palmus-7b5729220/
+  website: https://www.linkedin.com/in/jhansenpalmus
+  is_me: true
 le:
   first_name: Michael Truong
   last_name: Le
@@ -76,14 +11,39 @@ verma:
   first_name: Alok
   last_name: Verma
   website: https://www.linkedin.com/in/alokverma001
-gupta:
-  first_name: Astha
-  last_name: Gupta
-ijspeert:
-  first_name: Auke
-  last_name: Ijspeert
-  website: https://www.epfl.ch/labs/biorob/people/ijspeert/
-renj:
-  first_name: Daniel
-  last_name: Renjewski
-  website: https://www.mec.ed.tum.de/am/renjewski/
+hausdörfer:
+  first_name: Oliver
+  last_name: Hausdörfer
+  website: oliver.hausdoerfer.de
+lienen:
+  first_name: Marten
+  lastjson: Lienen
+  website: https://www.martenlienen.com
+lüdke:
+  first_name: David
+  last_name: Lüdke
+  website: https://www.cs.cit.tum.de/daml/team/david-luedke/
+günnemann:
+  first_name: Stephan
+  last_name: Günnemann
+  website: https://www.cs.cit.tum.de/daml/guennemann/ 
+halis:
+  first_name: Buse
+  last_name: Halis
+  website: https://www.linkedin.com/in/buse-barcin-halis-562303143/
+lachner:
+  first_name: Michael
+  last_name: Lachner
+  website: https://www.linkedin.com/in/michael-lachner/
+petuker:
+  first_name: Henri
+  last_name: Petuker
+  # website: https://www.linkedin.com/in/buse-barcin-halis-562303143/
+schmidt:
+  first_name: Tobias
+  last_name: Schmidt
+  website: https://www.linkedin.com/in/tobias-schmidt-de/
+greiner:
+  first_name: Moritz
+  last_name: Greiner
+  website: https://www.linkedin.com/in/moritz-greiner-a012bb226/

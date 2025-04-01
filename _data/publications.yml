@@ -1,17 +1,3 @@
-- id2: agnathax
-  title: Deep reinforcement learning for investigating stretch feedback during swimming of the lamprey
-  description: Lampreys can locomote using only based on local sensory feedback loops. Similar neural network designs show favorable properties for robot learning.
-  image: agnathax_before.png
-  image_border: true
-  image_mouseover: agnathax_after.mp4
-  venue: Bioinspiration & Biomimetics
-  awards: Journal paper (masters' thesis)
-  paper: https://iopscience.iop.org/article/10.1088/1748-3190/adb8b1
-  authors:
-  - hausdörfer
-  - gupta
-  - ijspeert
-  - renj
 - id2: comCompression
   title: Communication Compression for Tensor Parallel LLM Inference
   arxiv: "2411.09510" # Required as string, as liquid ignores trailing zeros https://stackoverflow.com/questions/37862167/trailing-zeros-in-jekyll-liquid
@@ -25,34 +11,18 @@
   - le
   - hausdörfer
   - verma
-- id2: latentActionPriors
-  title: Latent Action Priors From a Single Gait Cycle Demonstration for Online Imitation Learning
-  project_page: https://sites.google.com/view/latent-action-priors
-  arxiv: 2410.03246
-  description: A single gait cycle of expert demonstration significantly improves achieved reward and visual appearance of the learned gait in locomotion tasks - even for transfer tasks.
-  image: lap_before.jpg
-  image_mouseover: lap_after.mp4
-  venue: CoRL, 2024
-  awards: Conference (workshop)
+
+- id2: turbulence
+  title: "From Zero to Turbulence: Generative Modeing for 3D Flow Simulation"
+  arxiv: "2306.01776" # Required as string, as liquid ignores trailing zeros https://stackoverflow.com/questions/37862167/trailing-zeros-in-jekyll-liquid
+  description: Simulation of turbulent flows using 3D using generative models. Introduction of a 3D turbulence dataset of high-resolution flows and two novel sample evaluation metrics for turbulent flows.
+  image: curl_norm.png
+  image_border: true
+  venue: ICLR, 2024
+  awards: Conference
+  webpage: https://www.cs.cit.tum.de/daml/generative-turbulence/
   authors:
-  - hausdörfer
-  - vonRohr
-  - lefort
-  - schoellig
-- id2: mechanobiology
-  title: "Mechanoactivation of Single Stem Cells in Microgels Using a 3D-Printed Stimulation Device"
-  venue: Small Methods, 2024
-  description: "3D-printed chip for mechanoactivation at single-cell level to study intracellular calcium signaling and translocation."
-  paper: https://onlinelibrary.wiley.com/doi/10.1002/smtd.202400272
-  image: mechanobiology_before.jpg
-  image_mouseover: cells_after.mp4
-  authors:
-    - nergis
-    - hausdörfer
-    - chen
-    - hiendl
-    - pharder
-    - wolfrum
-    - özkale
-  awards:
-    - "Journal Paper"
+  - lienen
+  - lüdke
+  - palmus
+  - günnemann

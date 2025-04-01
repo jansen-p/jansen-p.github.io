@@ -1,15 +1,12 @@
 - name: About
   link: /
   anchor: '#'
-- name: Publications
-  link: /
-  anchor: '#publications'
 - name: Projects
   link: /
   anchor: '#projects'
-- name: Misc
+- name: Publications
   link: /
-  anchor: '#misc'
-- name: Teaching
-  link: /
-  anchor: '#teaching'
+  anchor: '#publications'
+# - name: Misc
+#   link: /
+#   anchor: '#misc'
