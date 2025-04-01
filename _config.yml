@@ -18,18 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Oliver Hausdörfer
-name: Oliver Hausdörfer
-position: PhD Candidate
-email: oliver.hausdoerfer@tum.de
+title: Jan Hansen-Palmus
+name: Jan Hansen-Palmus
+position: 
+email: jan.hansenpalmus@tum.de
 description: >-
-  I am a PhD candidate at [Prof. Schoellig](https://www.ce.cit.tum.de/lsy/prof-angela-schoellig/)'s lab at Technical University of Munich. My main interests include control for complex systems, reinforcement learning, and robotics. Previously, I completed a M.Sc. degree in Robotics at TUM, and wrote my master's thesis with [Prof. Ijspeert](https://www.epfl.ch/labs/biorob/). I was at [Robert Bosch GmbH](https://www.bosch.de/) and in the [Formula Student](https://elbflorace.de/). Member of [AI Grid](https://ai-grid.org/en/). Podcast at [Labs Talk](https://www.youtube.com/watch?v=b0pXgmh-96w&t=193s).
+  I completed a M.Sc. degree in Computer Science at TUM, and wrote my master's thesis with [Recogni](https://www.recogni.com/).
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "oliver.hausdoerfer.de" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: OliHausdorfer
-github_username: OliEfr
-linkedin_name: ohausdoerfer
-google_scholar: -NHoohwAAAAJ
+url: "jansen-p.github.de" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: jansen-p
+linkedin_name: jhansenpalmus
 #google_analytics: G-MFWSBLRKG0
 
 # Build settings

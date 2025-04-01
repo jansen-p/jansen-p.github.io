@@ -55,6 +55,33 @@ layout: null
   </nav>
 
 
+  <div id="commit-info">Loading last commit date...</div>
+
+    <script>
+        async function fetchLastCommit() {
+            const repoOwner = "your-username"; // Change to your GitHub username
+            const repoName = "your-repo"; // Change to your repo name
+            const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits`;
+
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                if (data.length > 0) {
+                    const lastCommitDate = new Date(data[0].commit.committer.date);
+                    document.getElementById("commit-info").innerText = 
+                        "Last commit: " + lastCommitDate.toLocaleString();
+                } else {
+                    document.getElementById("commit-info").innerText = "No commits found.";
+                }
+            } catch (error) {
+                document.getElementById("commit-info").innerText = "Error fetching commit data.";
+            }
+        }
+
+        fetchLastCommit();
+    </script>
+
+
   <section class="hero" id="about">
     <div class="hero-body container is-max-desktop">
       <div class="columns is-vcentered">
@@ -79,37 +106,19 @@ layout: null
                 <span class="icon"><i class="fab fa-github"></i></span>
                 <span>GitHub</span>
               </a>
-              <a class="external-link button is-light" href="https://x.com/{{ site.twitter_username }}">
-                <span class="icon"><i class="fa-brands fa-x-twitter"></i></span>
-                <span>X</span>
-              </a>
               <a class="external-link button is-light" href="https://www.linkedin.com/in/{{ site.linkedin_name}}/">
                 <span class="icon"><i class="fab fa-linkedin-in"></i></span>
                 <span>LinkedIn</span>
               </a>
-              <a class="external-link button is-light"
+              <!--<a class="external-link button is-light"
                 href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
                 <span class="icon"><i class="ai ai-google-scholar"></i></span>
-                <span>Scholar</span>
+                <span>Scholar</span>-->
               </a>
             </div>
           </div>
         </div>
       </div>
-        <div class="subscription-container">
-          <p class="subscription-message">
-              Stay up-to-date with my research. I will only send an e-mail every 6 months or so, promised. You can opt-out anytime.
-          </p>
-          <div class="subscription-form">
-              <input type="email" id="emailInput" class="input-email" placeholder="Your-mail@mail.com">
-              <button id="submitButton" class="submit-btn" aria-label="Subscribe">
-                  <!-- Flaticon Send Arrow Icon (ID: 736161) -->
-                  <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path d="M476.59,227.75l-.16-.07L49.35,49.84A23.56,23.56,0,0,0,27.14,52.6,24.65,24.65,0,0,0,16,73.44L16,185.36a24.57,24.57,0,0,0,23.16,24.43l164.34,12q7.21.54,12.12,6.24a19.35,19.35,0,0,1,5.46,14L217.77,284a19.13,19.13,0,0,1-5.46,14c-4.91,5.7-10.56,6.33-17.77,7l-164,12A24.58,24.58,0,0,0,16,341.74L16,438.51A24.63,24.63,0,0,0,39.34,464a23.28,23.28,0,0,0,10-2.19l427.25-178a25,25,0,0,0,0-46Z"/>
-                  </svg>
-              </button>
-          </div>
-        <div id="message" class="message" style="display: none;"></div>
     </div>
     </div>
   </section>
@@ -138,40 +147,14 @@ layout: null
   </section>
 
 
-  <section class="section">
+  <!--<section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-3 anchor" id="misc">Miscellaneous</h2>
       {% for publication in site.data.misc %}
         {% include section.html %}
       {% endfor %}
-      </div>
-  </section>
-
-    <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 anchor" id="teaching">Teaching</h2>
-      <div class="publication-block columns">
-        <div class="column">
-          <div class="content">
-            <h3 class="publication-title">Practical course: Hands-On Introduction to Deep Reinforcement Learning</h3>
-            <div class="publication-venue">
-              <span>SS 2024</span>
-            </div>
-            <p class="publication-description">
-              <a href="https://github.com/OliEfr/hands-on-introduction-to-DRL-assignment/tree/main">Assignments 1, 2,
-                3</a>
-            </p>
-            <div class="publication-links buttons field has-addons">
-              <a class="external-link button is-small is-ghost" style="padding-left: .4em; " href="https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/950759169?$ctx=lang=en&$scrollTo=toc_overview">
-                <span class="icon"><i class="fas fa-book-open"></i></span>
-                <span>Course Page</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+  </section>-->
 
   <div class="hr">
     <div class="container">
@@ -190,29 +173,21 @@ layout: null
     <div class="container">
       <div class="content footer-links has-text-centered">
         <a href="mailto:{{ site.email }}">
-          <i class="fas fa-envelope" title="oliver.hausdoerfer@tum.de"></i>
+          <i class="fas fa-envelope" title="jan.hansenpalmus@tum.de"></i>
         </a>
         <a class="external-link" href="https://github.com/{{ site.github_username }}">
           <i class="fab fa-github"></i>
-        </a>
-        <a class="external-link" href="https://x.com/{{ site.twitter_username }}">
-          <i class="fa-brands fa-x-twitter"></i>
         </a>
         <a class="external-link" href="https://www.linkedin.com/in/{{ site.linkedin_name }}/">
           <i class="fab fa-linkedin-in"></i>
         </a>
 
-        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-          <i class="ai ai-google-scholar"></i>
-        </a>
       </div>
       <div class="columns is-centered has-text-centered">
         <div class="column is-8">
           <div class="content">
             <p>
-              Site borrowed from <a href="https://keunhong.com/">this</a> and inspired by <a
-                href="https://vsimkus.github.io/academic-jekyll/">this</a>. Feel free to reuse <a
-                href="https://github.com/OliEfr/OliEfr.github.io">this site</a>.
+              Site borrowed from <a href="https://github.com/OliEfr/OliEfr.github.io/">here</a><a>.
             </p>
           </div>
         </div>
